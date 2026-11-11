@@ -9,7 +9,13 @@ A mobile-first budgeting web app (installable PWA). No build step and no server:
 - **Cash flow**: set your pay (amount, weekly/fortnightly/monthly, next pay date, with weekend paydays moved to the Friday before), your current balance, and recurring bills, savings transfers and income. Log spending with the **+** button. You get a 90-day projected balance chart, low-balance warnings, a 5-week timeline with running balance and a monthly summary.
 - **Settings**: currency, light/dark theme, JSON backup/restore and category rules.
 
-## Run locally
+## Easiest: just open it
+
+Download **`dist/Pocket-Budget.html`** and double-click it. That's it: no install, no server. Your data is saved in that browser.
+
+After changing the source, rebuild that file with `python build.py` (needs Node.js).
+
+## Run locally (development)
 
 ES modules need to be served over http (opening `index.html` directly won't work):
 
